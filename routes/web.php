@@ -18,6 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+// Usuarios
+Route::get('/usuarios/create', 'UsersController@create');
+
+// Requisiciones
+Route::get('/requisiciones/create', 'RequisicionesController@create');
+
+// Obras
+Route::get('/obras/create', 'ObrasController@create');
+
+
 //Ubicaciones
 Route::get('/ubicaciones', 'UbicacionesController@index');
 Route::get('/ubicaciones/create', 'UbicacionesController@create');
@@ -32,6 +43,5 @@ Route::get('/inventario/stocks', 'InventarioController@indexStock');
 Route::get('/inventario/createStockProduct', 'InventarioController@createStockProduct');
 Route::get('/inventario/create', 'InventarioController@create');
 Route::post('/inventario/saveStockProduct', 'InventarioController@saveStockProduct');
-
 //Stocks
 Route::post('/inventario/createStockProduct', 'InventarioController@createStockProduct');
