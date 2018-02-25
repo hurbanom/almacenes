@@ -13,7 +13,7 @@ class RequisicionesController extends Controller
 
     public function index()
     {
-
+        return view('requisiciones.index');
     }
 
     public function create()

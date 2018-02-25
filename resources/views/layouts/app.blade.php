@@ -8,10 +8,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name') }}</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/_all-skins.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/AdminLTE.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -105,7 +105,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Control de Cajas Chicas
+                                Portal de Proveedores
                             </a>
                         </li>
                         <li class="dropdown">
@@ -125,10 +125,10 @@
                                             <a href="#">Obras</a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a href="/usuarios/create">Crear Nueva</a>
+                                                    <a href="/obras/create">Crear Nueva</a>
                                                 </li>
                                             	<li>
-                                                    <a href="#">Lista</a>
+                                                    <a href="/obras/">Lista</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -139,7 +139,7 @@
                                                     <a href="/usuarios/create">Crear Nuevo</a>
                                                 </li>
                                             	<li>
-                                                    <a href="#">Lista</a>
+                                                    <a href="/usuarios">Lista</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -188,7 +188,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery/bootstrap-datepicker.min.js') }}"></script>
-    <script src="{{ asset('js/jquery/select2.full.min.js') }}"></script>
+    <script src="{{ asset('js/jquery/select2.js') }}"></script>
     <script src="{{ asset('js/jquery/select2-es.js') }}"></script>
     @yield('scripts')
 

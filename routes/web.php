@@ -20,12 +20,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 // Usuarios
+Route::get('/usuarios', 'UsersController@index');
 Route::get('/usuarios/create', 'UsersController@create');
 
 // Requisiciones
+Route::get('/requisiciones', 'RequisicionesController@index');
 Route::get('/requisiciones/create', 'RequisicionesController@create');
 
 // Obras
+Route::get('/obras', 'ObrasController@index');
 Route::get('/obras/create', 'ObrasController@create');
 
 

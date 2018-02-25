@@ -13,7 +13,7 @@ class ObrasController extends Controller
 
     public function index()
     {
-
+        return view('obras.index');
     }
 
     public function create()

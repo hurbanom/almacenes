@@ -7,10 +7,13 @@
 
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Nueva Requisición</h3>
+                    <h3 class="box-title">Requisiciones</h3>
                 </div>
 
-                <requisicion></requisicion>
+                <div class="box-body">
+
+                </div>
+
             </div>
 
         </div>
@@ -18,17 +21,6 @@
 </div>
 
 @endsection
-
 @section('scripts')
-<script>
 
-Vue.component('articulosrequisiciones', 'ArticulosRequisiciones');
-
-var posts = new Vue({
-    el: "#app",
-
-
-});
-
-</script>
 @stop
