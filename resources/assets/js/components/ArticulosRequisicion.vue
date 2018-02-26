@@ -89,6 +89,7 @@ export default {
 
   },
   methods: {
+
       agregar_articulo: function(event) {
 
           var familia = this.familia && this.familia.trim();
@@ -108,8 +109,7 @@ export default {
               nota_adicional: nota_adicional.toUpperCase(),
               unidad: unidad.toUpperCase(),
               cantidad: cantidad.toUpperCase(),
-          })
-
+          });
       }
   }
 }

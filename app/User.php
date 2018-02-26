@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Las obras que pertenecen a los usuarios
+     */
+    public function obras()
+    {
+        return $this->belongsToMany('App\Models\Obra');
+    }
 }

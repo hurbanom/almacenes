@@ -16,14 +16,7 @@ class AddFieldsToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('nextel', 20)->after('email');
             $table->string('celular', 10)->after('nextel');
-            $table->enum('cargo', [
-                'Gerente de Proyecto',
-                'Superintendente',
-                'Residente', 'Control de Obra',
-                'Jefe de Frente',
-                'Obra'
-            ])->after('celular');
-            $table->boolean('bloqueado')->after('cargo');
+            $table->boolean('bloqueado')->after('celular');
         });
     }
 
@@ -35,7 +28,7 @@ class AddFieldsToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['obras_asignadas', 'nextel', 'celular', 'cargo', 'bloqueado']);
+            $table->dropColumn(['nextel', 'celular', 'bloqueado']);
         });
     }
 }

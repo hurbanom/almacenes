@@ -13,7 +13,14 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import VueSweetalert2 from 'vue-sweetalert2';
+Vue.use(VueSweetalert2);
+
 Vue.component('example', require('./components/Example.vue'));
+
+Vue.component('usuarios', require('./components/Usuarios.vue'));
+
+Vue.component('obras', require('./components/Obras.vue'));
 
 Vue.component('requisicion', require('./components/Requisicion.vue'));
 Vue.component('articulosrequisicion', require('./components/ArticulosRequisicion.vue'));

@@ -13,7 +13,7 @@ class CreateUsuarioObraTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuario_obra', function (Blueprint $table) {
+        Schema::create('obra_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('obra_id')->unsigned();
@@ -34,6 +34,6 @@ class CreateUsuarioObraTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuario_obra');
+        Schema::dropIfExists('obra_user');
     }
 }

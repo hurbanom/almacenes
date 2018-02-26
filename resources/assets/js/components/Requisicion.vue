@@ -68,7 +68,7 @@
     </div>
 
     <div class="box-footer" style="text-align:center">
-        <button type="button" class="btn btn-primary">
+        <button type="button" v-on:click='guardarRegistro' class="btn btn-primary">
             Guardar
         </button>
     </div>
@@ -107,7 +107,27 @@ export default {
 
   },
   methods: {
+      guardarRegistro: function(event) {
 
+          this.$swal({
+            title: "Guardando registro",
+            text: "Espere por favor",
+            imageUrl: "/images/loading.gif",
+            showConfirmButton: false,
+            allowEscapeKey: false
+          });
+
+          axios.post('/requisicion/save', {
+              articulos : this.$children[0].articulos
+          })
+          .then(function (response) {
+
+          })
+          .catch(function (error) {
+
+          });
+
+      }
   }
 }
 

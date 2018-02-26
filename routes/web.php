@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index');
 // Usuarios
 Route::get('/usuarios', 'UsersController@index');
 Route::get('/usuarios/create', 'UsersController@create');
+Route::post('/usuarios/save', 'UsersController@save');
 
 // Requisiciones
 Route::get('/requisiciones', 'RequisicionesController@index');
@@ -30,7 +31,7 @@ Route::get('/requisiciones/create', 'RequisicionesController@create');
 // Obras
 Route::get('/obras', 'ObrasController@index');
 Route::get('/obras/create', 'ObrasController@create');
-
+Route::post('/obras/save', 'ObrasController@save');
 
 //Ubicaciones
 Route::get('/ubicaciones', 'UbicacionesController@index');

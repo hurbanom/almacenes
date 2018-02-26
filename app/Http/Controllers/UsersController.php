@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UsersController extends Controller
 {
@@ -19,5 +20,12 @@ class UsersController extends Controller
     public function create()
     {
         return view('auth.register');
+    }
+
+    public function save()
+    {
+        $user = User::find(1);
+        // $user->obras()->attach(1, ['cargo_id' => 1, 'cargo' => 'Nombre Cargo']);
+        $user->obras()->detach(1);
     }
 }

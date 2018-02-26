@@ -9,6 +9,7 @@
     <title>{{ config('app.name') }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-datepicker.css') }}" rel="stylesheet">
     <link href="{{ asset('css/_all-skins.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/AdminLTE.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -190,6 +191,7 @@
     <script src="{{ asset('js/jquery/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('js/jquery/select2.js') }}"></script>
     <script src="{{ asset('js/jquery/select2-es.js') }}"></script>
+    <script src="{{ asset('js/jquery/datepicker.es.min.js') }}"></script>
     @yield('scripts')
 
 </body>

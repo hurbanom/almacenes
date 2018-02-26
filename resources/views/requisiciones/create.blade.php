@@ -22,9 +22,7 @@
 @section('scripts')
 <script>
 
-Vue.component('articulosrequisiciones', 'ArticulosRequisiciones');
-
-var posts = new Vue({
+var requisicion = new Vue({
     el: "#app",
 
 
