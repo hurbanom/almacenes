@@ -14,9 +14,9 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('nextel', 20)->after('email');
-            $table->string('celular', 10)->after('nextel');
-            $table->boolean('bloqueado')->after('celular');
+            $table->string('nextel', 20)->null()->after('email');
+            $table->string('celular', 10)->null()->after('nextel');
+            $table->boolean('bloqueado')->null()->after('celular')->default(1);
         });
     }
 
