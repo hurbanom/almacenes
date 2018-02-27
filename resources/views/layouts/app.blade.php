@@ -68,6 +68,9 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+.navbar {
+    z-index: 1000;
+}
 </style>
 <body>
     <div id="app">
@@ -77,8 +80,15 @@
                     <a class="navbar-brand" href="{{ url('/home') }}">
                         SIECP
                     </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
+
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
+
                     @if (Auth::user())
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
