@@ -209,11 +209,15 @@ export default {
             ]
         }
     },
-    mounted() {
-
+    created: function () {
         var component = this;
 
         component.vista = component.post_vista;
+
+    },
+    mounted() {
+
+        var component = this;
 
         $('#fecha_inicio').datepicker({
             autoclose: true,

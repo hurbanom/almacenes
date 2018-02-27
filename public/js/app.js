@@ -2249,11 +2249,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             'estados': [{ 'estado': 'SELECCIONA' }, { 'estado': 'AGUASCALIENTES' }, { 'estado': 'BAJA CALIFORNIA' }, { 'estado': 'BAJA CALIFORNIA SUR' }, { 'estado': 'CAMPECHE' }, { 'estado': 'CHIAPAS' }, { 'estado': 'CHIHUAHUA' }, { 'estado': 'CIUDAD DE MÉXICO' }, { 'estado': 'COAHUILA' }, { 'estado': 'COLIMA' }, { 'estado': 'DURANGO' }, { 'estado': 'GUANAJUATO' }, { 'estado': 'GUERRERO' }, { 'estado': 'HIDALGO' }, { 'estado': 'JALISCO' }, { 'estado': 'MÉXICO' }, { 'estado': 'MICHOACÁN' }, { 'estado': 'MORELOS' }, { 'estado': 'NAYARIT' }, { 'estado': 'NUEVO LEÓN' }, { 'estado': 'OAXACA' }, { 'estado': 'PUEBLA' }, { 'estado': 'QUERÉTARO' }, { 'estado': 'QUINTANA ROO' }, { 'estado': 'SAN LUIS POTOSÍ' }, { 'estado': 'SINALOA' }, { 'estado': 'SONORA' }, { 'estado': 'TABASCO' }, { 'estado': 'TAMAULIPAS' }, { 'estado': 'TLAXCALA' }, { 'estado': 'VERACRUZ' }, { 'estado': 'YUCATÁN' }, { 'estado': 'ZACATECAS' }]
         };
     },
-    mounted: function mounted() {
-
+    created: function created() {
         var component = this;
 
         component.vista = component.post_vista;
+    },
+    mounted: function mounted() {
+
+        var component = this;
 
         $('#fecha_inicio').datepicker({
             autoclose: true,
